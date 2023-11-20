@@ -1,24 +1,17 @@
 --
 -- init.lua
--- Copyright (C) 2023 tinix <tinix@debian>
+-- Copyright (C) 2023 Daniel Tinivella <tinix@debian>
 --
 -- Distributed under terms of the MIT license.
 --
+--
 
--- load basic config
-require("settings")
+vim.g.mapleader = " "
+vim.api.nvim_set_keymap('i', 'jk','<ESC>', { noremap = true })
 
--- load plugins
-require("plugins")
+vim.o.relativenumber = true
 
--- load keymaps
-require("keymaps")
+require('packer-plugins')
 
--- load themes
-require("themes")
 
--- Config for LSP
-require("lsp")
 
--- Config for Tree 
-require("nv-tree")
