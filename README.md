@@ -1,3 +1,3 @@
-# My Awesome Nvim Project with Lua
+# Nvim Rocket Project with Lua
 
 ## author: [Daniel Tinivella](https://github.com/tinix)
