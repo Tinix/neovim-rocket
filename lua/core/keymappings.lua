@@ -40,21 +40,26 @@ vim.cmd [[
   set noshowmode
 ]]
 
+local keymap = vim.api.nvim_set_keymap
+local opts = { noremap = true, silent = true }
+
+-- Configuración de telescope
+keymap('n', '<leader>ff', [[<cmd>lua require('telescope.builtin').find_files()<cr>]], opts)
+keymap('n', '<leader>fg', [[<cmd>lua require('telescope.builtin').live_grep()<cr>]], opts)
+keymap('n', '<leader>fb', [[<cmd>lua require('telescope.builtin').buffers()<cr>]], opts)
+keymap('n', '<leader>fh', [[<cmd>lua require('telescope.builtin').help_tags()<cr>]], opts)
+
+keymap('n', 'j', 'h', opts)
+keymap('n', 't', 'j', opts)
+keymap('n', 'n', 'k', opts)
+keymap('n', 's', 'l', opts)
+keymap('n', 'j', 'h', opts)
+keymap('n', 't', 'j', opts)
+keymap('n', 'n', 'k', opts)
+keymap('n', 's', 'l', opts)
 
 
--- QWERTY para DVORAK
-vim.api.nvim_set_keymap('n', 'h', 'h', { noremap = true })
-vim.api.nvim_set_keymap('n', 't', 't', { noremap = true })
-vim.api.nvim_set_keymap('n', 'n', 'n', { noremap = true })
-vim.api.nvim_set_keymap('n', 's', 's', { noremap = true })
-vim.api.nvim_set_keymap('n', 'h', 'h', { noremap = true })
--- Repite esto para todas las teclas que desees ajustar
 
--- Teclas que no necesitas cambiar
--- vim.api.nvim_set_keymap('n', ';', ';', { noremap = true })
--- vim.api.nvim_set_keymap('n', 'y', 'y', { noremap = true })
--- vim.api.nvim_set_keymap('n', 'b', 'b', { noremap = true })
--- Repite esto para las teclas que deseas dejar como están
 
 
 
