@@ -85,6 +85,7 @@ return require('packer').startup(function(use)
   -- Rust
   use 'rust-lang/rust.vim'
   use 'rhysd/vim-clang-format'
+
   -- Ruby 
   use 'tpope/vim-rails'
   use 'vim-ruby/vim-ruby'
@@ -106,6 +107,7 @@ return require('packer').startup(function(use)
   use 'ray-x/guihua.lua'
   use 'olexsmir/gopher.nvim'
   use 'leoluz/nvim-dap-go'
+  use 'Exafunction/codeium.vim'
   
 
   use 'nvim-treesitter/nvim-treesitter'
