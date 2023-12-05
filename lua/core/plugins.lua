@@ -44,11 +44,9 @@ return require('packer').startup(function(use)
   use 'bluz71/vim-moonfly-colors'
   use 'rebelot/kanagawa.nvim'
   use 'catppuccin/nvim'
-  use 'fatinch/vim-monokai'
   use 'patstockwell/vim-monokai-tasty'
   use 'sainnhe/everforest'
   use 'tomasiser/vim-code-dark'
-  use 'ayu-themes/ayu-vim'
   use 'chriskempson/base16-vim'
   use 'jpo/vim-railscasts-theme'
   use 'jacoborus/tender.vim'
@@ -59,18 +57,21 @@ return require('packer').startup(function(use)
   use 'junegunn/fzf'
   use 'junegunn/fzf.vim'
   use 'airblade/vim-rooter'
-  use 'terryma/vim-multiple-cursors'
+  -- use 'terryma/vim-multiple-cursors'
   use 'machakann/vim-highlightedyank'
   use 'prettier/vim-prettier'
+  use 'vimwiki/vimwiki'
+  use 'mg979/vim-visual-multi'
+
 
  --  Plug
   use 'tpope/vim-commentary'
   use 'tpope/vim-surround'
   use 'tpope/vim-repeat'
-  use 'tpope/vim-endwise'
   
   use 'tpope/vim-dispatch'
   use 'tpope/vim-projectionist'
+  use 'tpope/vim-endwise'
 
   -- Templates
   use 'aperezdc/vim-template'
@@ -105,6 +106,7 @@ return require('packer').startup(function(use)
   use 'ray-x/guihua.lua'
   use 'olexsmir/gopher.nvim'
   use 'leoluz/nvim-dap-go'
+  
 
   use 'nvim-treesitter/nvim-treesitter'
   use {

@@ -1,6 +1,6 @@
 --
 -- treesitter.lua
--- Copyright (C) 2023 tinix <tinix@debian>
+-- Copyright (C) 2023 Daniel Tinivella <tinix@debian>
 --
 -- Distributed under terms of the MIT license.
 --
