@@ -107,7 +107,6 @@ return require('packer').startup(function(use)
   use 'ray-x/guihua.lua'
   use 'olexsmir/gopher.nvim'
   use 'leoluz/nvim-dap-go'
-  use 'Exafunction/codeium.vim'
   
 
   use 'nvim-treesitter/nvim-treesitter'

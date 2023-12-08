@@ -12,7 +12,7 @@ end
 require('lualine').setup { 
   options = {
     icons_enabled = true,
-    theme = 'dracula',
+    theme = 'gruvbox',
     globalstatus = true,
   },
   sections = {
