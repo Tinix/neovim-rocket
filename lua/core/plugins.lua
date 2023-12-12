@@ -32,6 +32,7 @@ return require('packer').startup(function(use)
   
 
   -- Themes
+  use 'ellisonleao/gruvbox.nvim'
   use 'EdenEast/nightfox.nvim'
   use 'sainnhe/sonokai'
   use 'sainnhe/gruvbox-material'
@@ -107,8 +108,6 @@ return require('packer').startup(function(use)
   use 'ray-x/guihua.lua'
   use 'olexsmir/gopher.nvim'
   use 'leoluz/nvim-dap-go'
-  
-
   use 'nvim-treesitter/nvim-treesitter'
   use {
     'nvim-telescope/telescope.nvim',
@@ -116,9 +115,28 @@ return require('packer').startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  -- Oil.nvim
+  use({
+    "stevearc/oil.nvim",
+    config = function()
+      require("oil").setup()
+    end,
+  })
 
-  -- Theme
-  use 'ellisonleao/gruvbox.nvim'
+  -- Harpoon
+  use {
+    'ThePrimeagen/harpoon',
+    requires = {
+      'nvim-lua/plenary.nvim',
+      'nvim-lua/popup.nvim',
+    },
+  }
+
+  -- Transparent
+  use 'xiyaowong/nvim-transparent'
+
+   -- nvim-floaterm
+    use 'voldikss/vim-floaterm'
 
   if packer_bootstrap then
     require('packer').sync()
