@@ -12,7 +12,8 @@ end
 require('lualine').setup { 
   options = {
     icons_enabled = true,
-    theme = 'gruvbox',
+    theme = 'nord',
+    transparent = true,
     globalstatus = true,
   },
   sections = {

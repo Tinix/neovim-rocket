@@ -23,7 +23,6 @@ return require('packer').startup(function(use)
   use 'neovim/nvim-lspconfig'
   use 'nvim-lua/plenary.nvim'
   use 'nvim-lua/popup.nvim'
-  use 'nvim-telescope/telescope.nvim'
   use 'nvim-treesitter/nvim-treesitter'
   use 'nvim-tree/nvim-tree.lua'
   use 'nvim-tree/nvim-web-devicons'
@@ -36,6 +35,8 @@ return require('packer').startup(function(use)
   use 'EdenEast/nightfox.nvim'
   use 'sainnhe/sonokai'
   use 'sainnhe/gruvbox-material'
+  use 'shaunsingh/solarized.nvim'
+  use 'Mofiqul/dracula.nvim'
   use 'sainnhe/edge'
   use 'arcticicestudio/nord-vim'
   use 'marko-cerovac/material.nvim'
@@ -52,13 +53,12 @@ return require('packer').startup(function(use)
   use 'jpo/vim-railscasts-theme'
   use 'jacoborus/tender.vim'
   use 'rakr/vim-one'
-  use 'dracula/vim'
+  -- use 'dracula/vim'
   use 'vim-airline/vim-airline'
   use 'vim-airline/vim-airline-themes'
   use 'junegunn/fzf'
   use 'junegunn/fzf.vim'
   use 'airblade/vim-rooter'
-  -- use 'terryma/vim-multiple-cursors'
   use 'machakann/vim-highlightedyank'
   use 'prettier/vim-prettier'
   use 'vimwiki/vimwiki'
@@ -109,6 +109,8 @@ return require('packer').startup(function(use)
   use 'olexsmir/gopher.nvim'
   use 'leoluz/nvim-dap-go'
   use 'nvim-treesitter/nvim-treesitter'
+  use 'Exafunction/codeium.vim'
+
   use {
     'nvim-telescope/telescope.nvim',
     tags = '0.1.0',

@@ -28,3 +28,62 @@ vim.cmd('let g:transparent_bg = 1')
 vim.cmd('let g:transparent_bg_darkness = 0.5') 
 vim.cmd('let g:transparent_bg_img_path = "/home/tinix/Pictures/space/andromeda.png"') 
 
+
+-- Habilitar la transparencia
+vim.cmd[[ hi Normal guibg=NONE ctermbg=NONE ]]
+vim.cmd[[ hi SignColumn guibg=NONE ctermbg=NONE ]]
+vim.cmd[[ hi VertSplit guibg=NONE ctermbg=NONE ]]
+vim.cmd[[ hi StatusLine guibg=NONE ctermbg=NONE ]]
+vim.cmd[[ hi StatusLineNC guibg=NONE ctermbg=NONE ]]
+vim.cmd[[ hi Folded guibg=NONE ctermbg=NONE ]]
+vim.cmd[[ hi FoldColumn guibg=NONE ctermbg=NONE ]]
+vim.cmd[[ hi IncSearch guibg=NONE ctermbg=NONE gui=underline ]]
+vim.cmd[[ hi Search guibg=NONE ctermbg=NONE gui=underline ]]
+vim.cmd[[ hi SpellBad gui=undercurl ]]
+vim.cmd[[ hi SpellCap gui=undercurl ]]
+vim.cmd[[ hi SpellLocal gui=undercurl ]]
+vim.cmd[[ hi SpellRare gui=undercurl ]]
+
+-- Establecer la transparencia (ajusta el valor según tus preferencias)
+vim.cmd[[ hi Normal guibg=NONE ctermbg=NONE ]]
+vim.cmd[[ hi VertSplit guibg=NONE ctermbg=NONE ]]
+vim.cmd[[ hi StatusLine guibg=NONE ctermbg=NONE ]]
+vim.cmd[[ hi StatusLineNC guibg=NONE ctermbg=NONE ]]
+vim.cmd[[ hi Folded guibg=NONE ctermbg=NONE ]]
+vim.cmd[[ hi FoldColumn guibg=NONE ctermbg=NONE ]]
+vim.cmd[[ hi IncSearch guibg=NONE ctermbg=NONE gui=underline ]]
+vim.cmd[[ hi Search guibg=NONE ctermbg=NONE gui=underline ]]
+vim.cmd[[ hi SpellBad gui=undercurl ]]
+vim.cmd[[ hi SpellCap gui=undercurl ]]
+vim.cmd[[ hi SpellLocal gui=undercurl ]]
+vim.cmd[[ hi SpellRare gui=undercurl ]]
+
+-- Configuración de transparencia
+vim.cmd[[ hi Normal guibg=NONE ctermbg=NONE ]]
+vim.cmd[[ hi SignColumn guibg=NONE ctermbg=NONE ]]
+vim.cmd[[ hi VertSplit guibg=NONE ctermbg=NONE ]]
+vim.cmd[[ hi StatusLine guibg=NONE ctermbg=NONE ]]
+vim.cmd[[ hi StatusLineNC guibg=NONE ctermbg=NONE ]]
+vim.cmd[[ hi Folded guibg=NONE ctermbg=NONE ]]
+vim.cmd[[ hi FoldColumn guibg=NONE ctermbg=NONE ]]
+vim.cmd[[ hi IncSearch guibg=NONE ctermbg=NONE gui=underline ]]
+vim.cmd[[ hi Search guibg=NONE ctermbg=NONE gui=underline ]]
+vim.cmd[[ hi SpellBad gui=undercurl ]]
+vim.cmd[[ hi SpellCap gui=undercurl ]]
+vim.cmd[[ hi SpellLocal gui=undercurl ]]
+vim.cmd[[ hi SpellRare gui=undercurl ]]
+
+-- Configuración de transparencia (ajusta el valor según tus preferencias)
+vim.cmd[[ hi Normal guibg=NONE ctermbg=NONE ]]
+vim.cmd[[ hi VertSplit guibg=NONE ctermbg=NONE ]]
+vim.cmd[[ hi StatusLine guibg=NONE ctermbg=NONE ]]
+vim.cmd[[ hi StatusLineNC guibg=NONE ctermbg=NONE ]]
+vim.cmd[[ hi Folded guibg=NONE ctermbg=NONE ]]
+vim.cmd[[ hi FoldColumn guibg=NONE ctermbg=NONE ]]
+vim.cmd[[ hi IncSearch guibg=NONE ctermbg=NONE gui=underline ]]
+vim.cmd[[ hi Search guibg=NONE ctermbg=NONE gui=underline ]]
+vim.cmd[[ hi SpellBad gui=undercurl ]]
+vim.cmd[[ hi SpellCap gui=undercurl ]]
+vim.cmd[[ hi SpellLocal gui=undercurl ]]
+vim.cmd[[ hi SpellRare gui=undercurl ]]
+
