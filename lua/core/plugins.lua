@@ -31,7 +31,9 @@ return require('packer').startup(function(use)
 
   -- Tools Ale
   use 'dense-analysis/ale'
-  
+
+  -- auto-pairs
+  use 'windwp/nvim-autopairs'
 
   -- Themes
   use 'ellisonleao/gruvbox.nvim'
@@ -56,6 +58,8 @@ return require('packer').startup(function(use)
   use 'jpo/vim-railscasts-theme'
   use 'jacoborus/tender.vim'
   use 'rakr/vim-one'
+  use 'tanvirtin/monokai.nvim'
+
   -- use 'dracula/vim'
   use 'vim-airline/vim-airline'
   use 'vim-airline/vim-airline-themes'
@@ -146,4 +150,15 @@ return require('packer').startup(function(use)
   if packer_bootstrap then
     require('packer').sync()
   end
-end)
+
+  -- LuaSnip
+  use({
+    "L3MON4D3/LuaSnip",
+    tag = "v2.*",
+    run = "make install_jsregexp"
+  })
+
+  -- Add you plugins here
+
+end
+)
