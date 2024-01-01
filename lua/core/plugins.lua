@@ -28,6 +28,9 @@ return require('packer').startup(function(use)
   use 'nvim-tree/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
   use 'neoclide/coc.nvim'
+
+  -- Tools Ale
+  use 'dense-analysis/ale'
   
 
   -- Themes
