@@ -129,6 +129,9 @@ keymap('v', '<A-k>', ':m \'<-2<CR>gv=gv', opts)
 -- keymap('i', 'N', "<Esc>:m .-2<CR>==gi", opts)
 
 
+-- Key mapping to copy selected range and paste it to clipboard
+vim.api.nvim_set_keymap('x', '<Leader>y', [[:w !xclip -selection c<CR>]], { noremap = true, silent = true })
 
-
+-- Key mapping to paste from clipboard
+vim.api.nvim_set_keymap('n', '<Leader>p', [[:r !xclip -selection c -o<CR>]], { noremap = true, silent = true })
 
