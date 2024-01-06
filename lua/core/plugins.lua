@@ -158,7 +158,8 @@ return require('packer').startup(function(use)
     run = "make install_jsregexp"
   })
 
-  -- Add you plugins here
+  use 'lukas-reineke/indent-blankline.nvim'
+
 
 end
 )

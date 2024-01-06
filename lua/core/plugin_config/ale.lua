@@ -5,6 +5,7 @@
 -- Distributed under terms of the MIT license.
 --
 -- 
+vim.cmd[[let g:ale_linters_explicit = 1]]
 
 vim.g.ale_linters = {
   javascript = {'eslint'},
@@ -12,8 +13,8 @@ vim.g.ale_linters = {
   typescript = {'eslint'},
   typescriptreact = {'eslint'},
   python = {'flake8'},
-  go = {'golangci-lint'},
-  rust = {'rustc'},
+  go = {'golangci-lint', 'gofmt', 'goimports', 'golint', 'govet', 'gobuild', 'gopls', 'gosimple', 'gotype', 'bingo' ,'cspell', 'staticcheck', 'golangserver', 'tidy'},
+  rust = {'cargo', 'rls', 'rustc'},
   ruby = {'rubocop'},
   cpp = {'clangd'},
   erlang = {'dialyzer'},
@@ -45,4 +46,42 @@ vim.g.ale_linters = {
   stylus = {'prettier'},
   json5 = {'prettier'}
 }
-
+ vim.g.ale_fixers = {
+   javascript = {'eslint'},
+   javascriptreact = {'eslint'},
+   typescript = {'eslint'},
+   typescriptreact = {'eslint'},
+   python = {'black'},
+   go = {'gofmt'},
+   rust = {'rustfmt'},
+   ruby = {'rubocop'},
+   cpp = {'clang-format'},
+   erlang = {'dialyzer'},
+   elixir = {'mix_format'},
+   lua = {'luafmt'},
+   c = {'clang-format'},
+   cxx = {'clang-format'},
+   objc = {'clang-format'},
+   objcpp = {'clang-format'},
+   markdown = {'prettier'},
+   yaml = {'prettier'},
+   json = {'prettier'},
+   jsonc = {'prettier'},
+   sh = {'shfmt'},
+   zsh = {'shfmt'},
+   fish = {'fish_indent'},
+   vim = {'vint'},
+   html = {'tidy'},
+   css = {'tidy'},
+   xml = {'tidy'},
+   jsx = {'tidy'},
+   tsx = {'tidy'},
+   graphql = {'prettier'},
+   graphqls = {'prettier'},
+   vue = {'prettier'},
+   svelte = {'prettier'},
+   less = {'prettier'},
+   scss = {'prettier'},
+   stylus = {'prettier'},
+   json5 = {'prettier'}
+ }
