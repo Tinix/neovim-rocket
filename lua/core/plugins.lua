@@ -100,12 +100,23 @@ return require('packer').startup(function(use)
   use 'tpope/vim-bundler'
   use 'tpope/vim-rake'
   use 'tpope/vim-rbenv'
-  use 'vim-ruby/vim-ruby'
   use 'kana/vim-textobj-user'
   use 'nelstrom/vim-textobj-rubyblock'
   use 'kana/vim-textobj-entire'
   use 'kana/vim-textobj-indent'
   use 'kana/vim-textobj-line'
+
+  -- Elixir
+  use 'elixir-editors/vim-elixir'
+  use 'slashmili/alchemist.vim'
+  use({ 
+    "elixir-tools/elixir-tools.nvim", 
+    tag = "stable", 
+    requires = {
+      "nvim-lua/plenary.nvim" 
+    }}
+  )
+
   -- Go 
   use 'fatih/vim-go'
   use 'buoto/gotests-vim'
@@ -115,7 +126,6 @@ return require('packer').startup(function(use)
   use 'ray-x/guihua.lua'
   use 'olexsmir/gopher.nvim'
   use 'leoluz/nvim-dap-go'
-  use 'nvim-treesitter/nvim-treesitter'
   use 'Exafunction/codeium.vim'
 
   use {
@@ -152,13 +162,26 @@ return require('packer').startup(function(use)
   end
 
   -- LuaSnip
-  use({
-    "L3MON4D3/LuaSnip",
-    tag = "v2.*",
-    run = "make install_jsregexp"
-  })
+  -- use({
+  --   "L3MON4D3/LuaSnip",
+  --   tag = "v2.*",
+  --   run = "make install_jsregexp"
+  -- })
+  use {
+    'L3MON4D3/LuaSnip',
+    requires = { 'rafamadriz/friendly-snippets' },
+    config = function()
+      require('luasnip').config.setup({
+        history = true,
+        updateevents = 'TextChanged,TextChangedI',
+      })
+    end,
+  }
 
-  use 'lukas-reineke/indent-blankline.nvim'
+
+  -- use { 'lukas-reineke/indent-blankline.nvim', branch = 'lua' }
+  -- use { 'p00f/nvim-ts-rainbow', branch = 'main' }
+
 
 
 end

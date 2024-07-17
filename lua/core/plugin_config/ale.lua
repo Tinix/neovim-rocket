@@ -85,3 +85,10 @@ vim.g.ale_linters = {
    stylus = {'prettier'},
    json5 = {'prettier'}
  }
+
+vim.g.ale_sign_error = '💀'
+vim.g.ale_sign_warning = '🎃' 
+-- Ale will try to automatically apply corrections to the file you are saving
+vim.g.ale_fix_on_save = 1
+
+
