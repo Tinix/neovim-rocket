@@ -59,6 +59,9 @@ return require('packer').startup(function(use)
   use 'jacoborus/tender.vim'
   use 'rakr/vim-one'
   use 'tanvirtin/monokai.nvim'
+  use 'habamax/vim-gruvbit'
+  use 'morhetz/gruvbox'
+  use 'NLKNguyen/papercolor-theme'
 
   -- use 'dracula/vim'
   use 'vim-airline/vim-airline'
@@ -167,6 +170,7 @@ return require('packer').startup(function(use)
   --   tag = "v2.*",
   --   run = "make install_jsregexp"
   -- })
+  --
   use {
     'L3MON4D3/LuaSnip',
     requires = { 'rafamadriz/friendly-snippets' },
@@ -177,7 +181,21 @@ return require('packer').startup(function(use)
       })
     end,
   }
+  
+  -- Install without configuration
+  use ({ 'projekt0n/github-nvim-theme' })
 
+  -- Or with configuration
+  use({
+    'projekt0n/github-nvim-theme',
+    config = function()
+      require('github-theme').setup({
+        -- ...
+      })
+
+      vim.cmd('colorscheme github_dark')
+    end
+  })
 
   -- use { 'lukas-reineke/indent-blankline.nvim', branch = 'lua' }
   -- use { 'p00f/nvim-ts-rainbow', branch = 'main' }
