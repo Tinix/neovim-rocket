@@ -74,6 +74,22 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  LuaSnip = {
+    config = { "\27LJ\2\nv\0\0\3\0\5\0\b6\0\0\0'\2\1\0B\0\2\0029\0\2\0009\0\3\0005\2\4\0B\0\2\1K\0\1\0\1\0\2\17updateevents\29TextChanged,TextChangedI\fhistory\2\nsetup\vconfig\fluasnip\frequire\0" },
+    loaded = true,
+    path = "/home/tinix/.local/share/nvim/site/pack/packer/start/LuaSnip",
+    url = "https://github.com/L3MON4D3/LuaSnip"
+  },
+  ["alchemist.vim"] = {
+    loaded = true,
+    path = "/home/tinix/.local/share/nvim/site/pack/packer/start/alchemist.vim",
+    url = "https://github.com/slashmili/alchemist.vim"
+  },
+  ale = {
+    loaded = true,
+    path = "/home/tinix/.local/share/nvim/site/pack/packer/start/ale",
+    url = "https://github.com/dense-analysis/ale"
+  },
   ["base16-vim"] = {
     loaded = true,
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/base16-vim",
@@ -89,15 +105,30 @@ _G.packer_plugins = {
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/codeium.vim",
     url = "https://github.com/Exafunction/codeium.vim"
   },
+  ["dracula.nvim"] = {
+    loaded = true,
+    path = "/home/tinix/.local/share/nvim/site/pack/packer/start/dracula.nvim",
+    url = "https://github.com/Mofiqul/dracula.nvim"
+  },
   edge = {
     loaded = true,
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/edge",
     url = "https://github.com/sainnhe/edge"
   },
+  ["elixir-tools.nvim"] = {
+    loaded = true,
+    path = "/home/tinix/.local/share/nvim/site/pack/packer/start/elixir-tools.nvim",
+    url = "https://github.com/elixir-tools/elixir-tools.nvim"
+  },
   everforest = {
     loaded = true,
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/everforest",
     url = "https://github.com/sainnhe/everforest"
+  },
+  ["friendly-snippets"] = {
+    loaded = true,
+    path = "/home/tinix/.local/share/nvim/site/pack/packer/start/friendly-snippets",
+    url = "https://github.com/rafamadriz/friendly-snippets"
   },
   fzf = {
     loaded = true,
@@ -108,6 +139,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/fzf.vim",
     url = "https://github.com/junegunn/fzf.vim"
+  },
+  ["github-nvim-theme"] = {
+    loaded = true,
+    path = "/home/tinix/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
+    url = "https://github.com/projekt0n/github-nvim-theme"
   },
   ["go.nvim"] = {
     loaded = true,
@@ -129,6 +165,11 @@ _G.packer_plugins = {
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/goyo.vim",
     url = "https://github.com/junegunn/goyo.vim"
   },
+  gruvbox = {
+    loaded = true,
+    path = "/home/tinix/.local/share/nvim/site/pack/packer/start/gruvbox",
+    url = "https://github.com/morhetz/gruvbox"
+  },
   ["gruvbox-material"] = {
     loaded = true,
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/gruvbox-material",
@@ -143,6 +184,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/guihua.lua",
     url = "https://github.com/ray-x/guihua.lua"
+  },
+  harpoon = {
+    loaded = true,
+    path = "/home/tinix/.local/share/nvim/site/pack/packer/start/harpoon",
+    url = "https://github.com/ThePrimeagen/harpoon"
   },
   ["kanagawa.nvim"] = {
     loaded = true,
@@ -164,6 +210,11 @@ _G.packer_plugins = {
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/material.nvim",
     url = "https://github.com/marko-cerovac/material.nvim"
   },
+  ["monokai.nvim"] = {
+    loaded = true,
+    path = "/home/tinix/.local/share/nvim/site/pack/packer/start/monokai.nvim",
+    url = "https://github.com/tanvirtin/monokai.nvim"
+  },
   ["nightfox.nvim"] = {
     loaded = true,
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
@@ -179,6 +230,11 @@ _G.packer_plugins = {
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/nvim",
     url = "https://github.com/catppuccin/nvim"
   },
+  ["nvim-autopairs"] = {
+    loaded = true,
+    path = "/home/tinix/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
+  },
   ["nvim-dap-go"] = {
     loaded = true,
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/nvim-dap-go",
@@ -192,7 +248,7 @@ _G.packer_plugins = {
   ["nvim-transparent"] = {
     loaded = true,
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/nvim-transparent",
-    url = "https://github.com/NvChad/nvim-transparent"
+    url = "https://github.com/xiyaowong/nvim-transparent"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
@@ -209,6 +265,12 @@ _G.packer_plugins = {
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
+  ["oil.nvim"] = {
+    config = { "\27LJ\2\n1\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\boil\frequire\0" },
+    loaded = true,
+    path = "/home/tinix/.local/share/nvim/site/pack/packer/start/oil.nvim",
+    url = "https://github.com/stevearc/oil.nvim"
+  },
   ["onedark.nvim"] = {
     loaded = true,
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/onedark.nvim",
@@ -218,6 +280,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  ["papercolor-theme"] = {
+    loaded = true,
+    path = "/home/tinix/.local/share/nvim/site/pack/packer/start/papercolor-theme",
+    url = "https://github.com/NLKNguyen/papercolor-theme"
   },
   ["plenary.nvim"] = {
     loaded = true,
@@ -233,6 +300,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/rust.vim",
     url = "https://github.com/rust-lang/rust.vim"
+  },
+  ["solarized.nvim"] = {
+    loaded = true,
+    path = "/home/tinix/.local/share/nvim/site/pack/packer/start/solarized.nvim",
+    url = "https://github.com/shaunsingh/solarized.nvim"
   },
   sonokai = {
     loaded = true,
@@ -258,11 +330,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
-  },
-  vim = {
-    loaded = true,
-    path = "/home/tinix/.local/share/nvim/site/pack/packer/start/vim",
-    url = "https://github.com/dracula/vim"
   },
   ["vim-airline"] = {
     loaded = true,
@@ -299,10 +366,20 @@ _G.packer_plugins = {
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/vim-dispatch",
     url = "https://github.com/tpope/vim-dispatch"
   },
+  ["vim-elixir"] = {
+    loaded = true,
+    path = "/home/tinix/.local/share/nvim/site/pack/packer/start/vim-elixir",
+    url = "https://github.com/elixir-editors/vim-elixir"
+  },
   ["vim-endwise"] = {
     loaded = true,
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/vim-endwise",
     url = "https://github.com/tpope/vim-endwise"
+  },
+  ["vim-floaterm"] = {
+    loaded = true,
+    path = "/home/tinix/.local/share/nvim/site/pack/packer/start/vim-floaterm",
+    url = "https://github.com/voldikss/vim-floaterm"
   },
   ["vim-fugitive"] = {
     loaded = true,
@@ -323,6 +400,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/vim-goimports",
     url = "https://github.com/mattn/vim-goimports"
+  },
+  ["vim-gruvbit"] = {
+    loaded = true,
+    path = "/home/tinix/.local/share/nvim/site/pack/packer/start/vim-gruvbit",
+    url = "https://github.com/habamax/vim-gruvbit"
   },
   ["vim-highlightedyank"] = {
     loaded = true,
@@ -442,6 +524,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: oil.nvim
+time([[Config for oil.nvim]], true)
+try_loadstring("\27LJ\2\n1\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\boil\frequire\0", "config", "oil.nvim")
+time([[Config for oil.nvim]], false)
+-- Config for: LuaSnip
+time([[Config for LuaSnip]], true)
+try_loadstring("\27LJ\2\nv\0\0\3\0\5\0\b6\0\0\0'\2\1\0B\0\2\0029\0\2\0009\0\3\0005\2\4\0B\0\2\1K\0\1\0\1\0\2\17updateevents\29TextChanged,TextChangedI\fhistory\2\nsetup\vconfig\fluasnip\frequire\0", "config", "LuaSnip")
+time([[Config for LuaSnip]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

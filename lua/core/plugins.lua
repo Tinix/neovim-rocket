@@ -74,7 +74,6 @@ return require('packer').startup(function(use)
   use 'vimwiki/vimwiki'
   use 'mg979/vim-visual-multi'
 
-
  --  Plug
   use 'tpope/vim-commentary'
   use 'tpope/vim-surround'
@@ -199,8 +198,14 @@ return require('packer').startup(function(use)
 
   -- use { 'lukas-reineke/indent-blankline.nvim', branch = 'lua' }
   -- use { 'p00f/nvim-ts-rainbow', branch = 'main' }
+  
+  -- Erlang Support
+  use 'vim-erlang/vim-erlang-runtime' -- Syntax highlighting and runtime files
+  use 'vim-erlang/vim-erlang-tags'    -- Tag generation for Erlang projects
+  use 'mfussenegger/nvim-jdtls'       -- LSP support for Erlang (via erlang_ls)
 
+  -- Zig Support
+  use 'ziglang/zig.vim'               -- Syntax highlighting and basic Zig support
+  use 'tami5/lspsaga.nvim'            -- Enhanced LSP UI for Zig (optional)
 
-
-end
-)
+end)
