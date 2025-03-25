@@ -41,6 +41,7 @@ return require('packer').startup(function(use)
   use 'sainnhe/sonokai'
   use 'sainnhe/gruvbox-material'
   use 'shaunsingh/solarized.nvim'
+  use "altercation/vim-colors-solarized"
   use 'Mofiqul/dracula.nvim'
   use 'sainnhe/edge'
   use 'arcticicestudio/nord-vim'

@@ -30,7 +30,7 @@ vim.opt.confirm = true
 vim.keymap.set('n', '<leader>e', ':nohlsearch<CR>')
 
 
--- Archivo: ~/.config/nvim/init.lua
+-- File: ~/.config/nvim/init.lua
 
 -- Basic configuration
 vim.cmd [[

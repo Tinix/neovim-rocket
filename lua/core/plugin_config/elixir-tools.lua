@@ -42,7 +42,7 @@ elixir.setup {
 
     -- alternatively, point to an existing elixir-ls installation (optional)
     -- not currently supported by elixirls, but can be a table if you wish to pass other args `{"path/to/elixirls", "--foo"}`
-    cmd = "/usr/local/bin/elixir-ls.sh",
+    cmd = "/usr/local/bin/elixir-ls",
 
     -- default settings, use the `settings` function to override settings
     settings = elixirls.settings {

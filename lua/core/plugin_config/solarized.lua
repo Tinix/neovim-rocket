@@ -6,9 +6,10 @@
 --
 --
  
-
-
+vim.g.solarized_contrast = "normal" 
+vim.g.solarized_visibility = "high" 
 vim.opt.termguicolors = true
+vim.opt.background = "light"
 vim.cmd("colorscheme solarized")
 
 
