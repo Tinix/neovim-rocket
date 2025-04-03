@@ -75,7 +75,7 @@ time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   LuaSnip = {
-    config = { "\27LJ\2\nv\0\0\3\0\5\0\b6\0\0\0'\2\1\0B\0\2\0029\0\2\0009\0\3\0005\2\4\0B\0\2\1K\0\1\0\1\0\2\fhistory\2\17updateevents\29TextChanged,TextChangedI\nsetup\vconfig\fluasnip\frequire\0" },
+    config = { "\27LJ\2\nv\0\0\3\0\5\0\b6\0\0\0'\2\1\0B\0\2\0029\0\2\0009\0\3\0005\2\4\0B\0\2\1K\0\1\0\1\0\2\17updateevents\29TextChanged,TextChangedI\fhistory\2\nsetup\vconfig\fluasnip\frequire\0" },
     loaded = true,
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
@@ -546,6 +546,12 @@ _G.packer_plugins = {
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/vimwiki",
     url = "https://github.com/vimwiki/vimwiki"
   },
+  ["zenburn.nvim"] = {
+    config = { "\27LJ\2\nH\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\31core.plugin_config.zenburn\frequire\0" },
+    loaded = true,
+    path = "/home/tinix/.local/share/nvim/site/pack/packer/start/zenburn.nvim",
+    url = "https://github.com/phha/zenburn.nvim"
+  },
   ["zig.vim"] = {
     loaded = true,
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/zig.vim",
@@ -554,13 +560,17 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: zenburn.nvim
+time([[Config for zenburn.nvim]], true)
+try_loadstring("\27LJ\2\nH\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\31core.plugin_config.zenburn\frequire\0", "config", "zenburn.nvim")
+time([[Config for zenburn.nvim]], false)
 -- Config for: oil.nvim
 time([[Config for oil.nvim]], true)
 try_loadstring("\27LJ\2\n1\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\boil\frequire\0", "config", "oil.nvim")
 time([[Config for oil.nvim]], false)
 -- Config for: LuaSnip
 time([[Config for LuaSnip]], true)
-try_loadstring("\27LJ\2\nv\0\0\3\0\5\0\b6\0\0\0'\2\1\0B\0\2\0029\0\2\0009\0\3\0005\2\4\0B\0\2\1K\0\1\0\1\0\2\fhistory\2\17updateevents\29TextChanged,TextChangedI\nsetup\vconfig\fluasnip\frequire\0", "config", "LuaSnip")
+try_loadstring("\27LJ\2\nv\0\0\3\0\5\0\b6\0\0\0'\2\1\0B\0\2\0029\0\2\0009\0\3\0005\2\4\0B\0\2\1K\0\1\0\1\0\2\17updateevents\29TextChanged,TextChangedI\fhistory\2\nsetup\vconfig\fluasnip\frequire\0", "config", "LuaSnip")
 time([[Config for LuaSnip]], false)
 
 _G._packer.inside_compile = false

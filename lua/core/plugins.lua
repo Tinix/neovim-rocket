@@ -196,6 +196,14 @@ return require('packer').startup(function(use)
       vim.cmd('colorscheme github_dark')
     end
   })
+  
+  use { 
+    'phha/zenburn.nvim',
+    config = function()
+      require('core.plugin_config.zenburn').setup()
+    end
+  
+  }
 
   -- use { 'lukas-reineke/indent-blankline.nvim', branch = 'lua' }
   -- use { 'p00f/nvim-ts-rainbow', branch = 'main' }
