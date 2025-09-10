@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/tinix/.cache/nvim/packer_hererocks/2.1.1692716794/share/lua/5.1/?.lua;/home/tinix/.cache/nvim/packer_hererocks/2.1.1692716794/share/lua/5.1/?/init.lua;/home/tinix/.cache/nvim/packer_hererocks/2.1.1692716794/lib/luarocks/rocks-5.1/?.lua;/home/tinix/.cache/nvim/packer_hererocks/2.1.1692716794/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/tinix/.cache/nvim/packer_hererocks/2.1.1692716794/lib/lua/5.1/?.so"
+local package_path_str = "/home/tinix/.cache/nvim/packer_hererocks/2.1.1737090214/share/lua/5.1/?.lua;/home/tinix/.cache/nvim/packer_hererocks/2.1.1737090214/share/lua/5.1/?/init.lua;/home/tinix/.cache/nvim/packer_hererocks/2.1.1737090214/lib/luarocks/rocks-5.1/?.lua;/home/tinix/.cache/nvim/packer_hererocks/2.1.1737090214/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/tinix/.cache/nvim/packer_hererocks/2.1.1737090214/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -74,12 +74,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  LuaSnip = {
-    config = { "\27LJ\2\nv\0\0\3\0\5\0\b6\0\0\0'\2\1\0B\0\2\0029\0\2\0009\0\3\0005\2\4\0B\0\2\1K\0\1\0\1\0\2\fhistory\2\17updateevents\29TextChanged,TextChangedI\nsetup\vconfig\fluasnip\frequire\0" },
-    loaded = true,
-    path = "/home/tinix/.local/share/nvim/site/pack/packer/start/LuaSnip",
-    url = "https://github.com/L3MON4D3/LuaSnip"
-  },
   ["alchemist.vim"] = {
     loaded = true,
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/alchemist.vim",
@@ -125,11 +119,6 @@ _G.packer_plugins = {
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/everforest",
     url = "https://github.com/sainnhe/everforest"
   },
-  ["friendly-snippets"] = {
-    loaded = true,
-    path = "/home/tinix/.local/share/nvim/site/pack/packer/start/friendly-snippets",
-    url = "https://github.com/rafamadriz/friendly-snippets"
-  },
   fzf = {
     loaded = true,
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/fzf",
@@ -139,11 +128,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/fzf.vim",
     url = "https://github.com/junegunn/fzf.vim"
-  },
-  ["github-nvim-theme"] = {
-    loaded = true,
-    path = "/home/tinix/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
-    url = "https://github.com/projekt0n/github-nvim-theme"
   },
   ["go.nvim"] = {
     loaded = true,
@@ -200,11 +184,6 @@ _G.packer_plugins = {
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/limelight.vim",
     url = "https://github.com/junegunn/limelight.vim"
   },
-  ["lspsaga.nvim"] = {
-    loaded = true,
-    path = "/home/tinix/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
-    url = "https://github.com/tami5/lspsaga.nvim"
-  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -244,11 +223,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/nvim-dap-go",
     url = "https://github.com/leoluz/nvim-dap-go"
-  },
-  ["nvim-jdtls"] = {
-    loaded = true,
-    path = "/home/tinix/.local/share/nvim/site/pack/packer/start/nvim-jdtls",
-    url = "https://github.com/mfussenegger/nvim-jdtls"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -390,16 +364,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/vim-endwise",
     url = "https://github.com/tpope/vim-endwise"
-  },
-  ["vim-erlang-runtime"] = {
-    loaded = true,
-    path = "/home/tinix/.local/share/nvim/site/pack/packer/start/vim-erlang-runtime",
-    url = "https://github.com/vim-erlang/vim-erlang-runtime"
-  },
-  ["vim-erlang-tags"] = {
-    loaded = true,
-    path = "/home/tinix/.local/share/nvim/site/pack/packer/start/vim-erlang-tags",
-    url = "https://github.com/vim-erlang/vim-erlang-tags"
   },
   ["vim-floaterm"] = {
     loaded = true,
@@ -545,33 +509,14 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/tinix/.local/share/nvim/site/pack/packer/start/vimwiki",
     url = "https://github.com/vimwiki/vimwiki"
-  },
-  ["zenburn.nvim"] = {
-    config = { "\27LJ\2\nH\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\31core.plugin_config.zenburn\frequire\0" },
-    loaded = true,
-    path = "/home/tinix/.local/share/nvim/site/pack/packer/start/zenburn.nvim",
-    url = "https://github.com/phha/zenburn.nvim"
-  },
-  ["zig.vim"] = {
-    loaded = true,
-    path = "/home/tinix/.local/share/nvim/site/pack/packer/start/zig.vim",
-    url = "https://github.com/ziglang/zig.vim"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: zenburn.nvim
-time([[Config for zenburn.nvim]], true)
-try_loadstring("\27LJ\2\nH\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\31core.plugin_config.zenburn\frequire\0", "config", "zenburn.nvim")
-time([[Config for zenburn.nvim]], false)
 -- Config for: oil.nvim
 time([[Config for oil.nvim]], true)
 try_loadstring("\27LJ\2\n1\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\boil\frequire\0", "config", "oil.nvim")
 time([[Config for oil.nvim]], false)
--- Config for: LuaSnip
-time([[Config for LuaSnip]], true)
-try_loadstring("\27LJ\2\nv\0\0\3\0\5\0\b6\0\0\0'\2\1\0B\0\2\0029\0\2\0009\0\3\0005\2\4\0B\0\2\1K\0\1\0\1\0\2\fhistory\2\17updateevents\29TextChanged,TextChangedI\nsetup\vconfig\fluasnip\frequire\0", "config", "LuaSnip")
-time([[Config for LuaSnip]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
